@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "kradian"
+require "daemons"
+
+if ARGV.include?("--daemonize")
+  Daemons.call do
+    Kradian.sync_steam_to_discord
+  end
+else
+  Kradian.sync_steam_to_discord
+end
