@@ -1,5 +1,6 @@
 require "kradian/version"
+require "kradian/steam"
 
 module Kradian
-  # Your code goes here...
+  STEAM_ID = "76561198132213543"
 end
